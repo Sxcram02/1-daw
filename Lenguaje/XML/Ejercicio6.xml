@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE equipos>
+<equipos>
+    <equipo>
+        <nombreEquipo>Real Madrid</nombreEquipo>
+        <ciudad>Comunidad de Madrid</ciudad>
+        <entrenador></entrenador>
+        <jugadores>
+            <jugador posicion="delantero">
+                   <nombreJugador>Karim Benzema</nombreJugador> 
+                   <nacionalidad>Francesa, argelino</nacionalidad>
+            </jugador>
+            <jugador posicion="centrocampista">
+                <nombreJugador>Luka Modrić</nombreJugador> 
+                <nacionalidad>Croata</nacionalidad>
+         </jugador>
+        </jugadores>
+    </equipo>
+    <equipo>
+        <nombreEquipo>Barcelona</nombreEquipo>
+        <ciudad>Barcelona</ciudad>
+        <entrenador></entrenador>
+        <jugadores>
+            <jugador posicion="delantero">
+                   <nombreJugador>Robert Lewandowski</nombreJugador> 
+                   <nacionalidad>Polaco</nacionalidad>
+            </jugador>
+            <jugador posicion="defensa">
+                <nombreJugador>Jules Koundé</nombreJugador> 
+                <nacionalidad>Francesa</nacionalidad>
+         </jugador>
+        </jugadores>
+    </equipo>
+</equipos>

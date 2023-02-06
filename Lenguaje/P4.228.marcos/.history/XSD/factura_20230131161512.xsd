@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="facturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="factura">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="datosEmisor">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"></xs:element>
+                                        <xs:element name="apellidos" type="xs:string"></xs:element>
+                                        <xs:element name="cif" type="cif"></xs:element>
+                                        <xs:element name="telefono" type="telefono"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="datosCliente">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"></xs:element>
+                                        <xs:element name="cif" type="cif"></xs:element>
+                                        <xs:element name="telefono" type="telefono"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="detallesFactura">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="articulo" minOccurs="1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="descripcion" type="xs:string"></xs:element>
+                                                    <xs:element name="cantidad" type="xs:integer"></xs:element>
+                                                    <xs:element name="oferta" type="oferta"></xs:element>
+                                                    <xs:element name="pvp" type="xs:integer">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="moneda" type="moneda"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="codigoArticulo" type="codigoArticulo" use="required"></xs:attribute>
+                                                <xs:attribute name="tipo" type="tipo" use="required"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="moneda" type="moneda"></xs:attribute>
+                                    <xs:attribute name="importe" type="xs:string" use="required"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="numero" type="xs:int" use="required"></xs:attribute>
+                        <xs:attribute name="fecha" type="xs:date" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="telefono">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="10"></xs:totalDigits>
+            <xs:pattern value="[0-9]*"></xs:pattern>
+        </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="cif">
+    <xs:restriction base="xs:string">
+        <xs:maxLength value="9"></xs:maxLength>
+        <xs:pattern value="([0-9]*)+[A-Z]+"></xs:pattern>
+    </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="codigoArticulo">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="3"></xs:maxLength>
+        </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="tipo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(([A-z]+[a-z]*)+[/s]*)*"></xs:pattern>
+            <xs:enumeration value="Manual"></xs:enumeration>
+            <xs:enumeration value="Libro"></xs:enumeration>
+            <xs:enumeration value="Varios"></xs:enumeration>
+        </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="oferta">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SI"></xs:enumeration>
+            <xs:enumeration value="NO"></xs:enumeration>
+        </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="moneda">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="euro"></xs:enumeration>
+            <xs:enumeration value="dolar"></xs:enumeration>
+        </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,9 @@
+ <!ELEMENT animales (grupos)*>
+    <!ELEMENT grupos EMPTY>
+        <!ATTLIST grupos imagenes CDATA #IMPLIED>
+            <!NOTATION gif SYSTEM 'gif'>
+                <!ENTITY ballena SYSTEM 'ballena.gif' NDATA gif>
+                <!ENTITY delfin SYSTEM 'delfin.gif' NDATA gif>
+                <!ENTITY elefante SYSTEM 'elefante.gif' NDATA gif>
+                <!ENTITY leon SYSTEM 'leon.gif' NDATA gif>
+                <!ENTITY oso SYSTEM 'oso.gif' NDATA gif> 

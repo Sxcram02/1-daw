@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE animales SYSTEM "animales2.dtd">
+<animales>
+    <grupos imagenes="ballena"></grupos>
+    <grupos imagenes="ballena delfin"></grupos>
+    <grupos imagenes="elefante leon oso"></grupos>
+    <grupos imagenes="ballena elefante"></grupos>
+</animales>

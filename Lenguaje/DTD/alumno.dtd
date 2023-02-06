@@ -1,0 +1,5 @@
+<!ELEMENT alumno (nombre,apellidos,direccion)>
+<!ATTLIST alumno edad CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE paginasWeb>
+<paginasWeb>
+    <pagina>
+        <nombre>MDN Web Docs</nombre>
+        <utilidad>Resources for Developers, by Developers</utilidad>
+        <dominio>https://developer.mozilla.org/es/</dominio>
+    </pagina>
+    <pagina>
+        <nombre>W3Schools</nombre>
+        <utilidad>Learn to code</utilidad>
+        <dominio>https://www.w3schools.com</dominio>
+    </pagina>
+    <pagina>
+        <nombre>Wikipedia</nombre>
+        <utilidad>La enciclopedia libre</utilidad>
+        <dominio>https://es.wikipedia.org/</dominio>
+    </pagina>
+</paginasWeb>

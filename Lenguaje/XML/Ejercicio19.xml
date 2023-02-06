@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE alumno SYSTEM "alumno.dtd">
+<alumno edad="20">
+    <nombre>Marcos</nombre>
+    <apellidos>Dominguez</apellidos>
+    <direccion>Lope de Vega</direccion>
+</alumno>

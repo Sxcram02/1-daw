@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE persona SYSTEM "persona2.dtd">
+<persona>
+    <nombre>Marcos</nombre>
+    <apellidos>Dominguez Vega</apellidos>
+    <fechaDeNacimiento>
+        <dia>15</dia>
+        <mes>04</mes>
+        <ano>2002</ano>
+    </fechaDeNacimiento>
+    <ciudad>Madrid</ciudad>
+</persona>

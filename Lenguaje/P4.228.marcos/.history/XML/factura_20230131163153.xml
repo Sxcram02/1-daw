@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE factura SYSTEM "../DTD/factura.dtd">
+<factura numero="27" fecha="18-12-2022">
+    <datosEmisor>
+        <nombre>Pérez</nombre>
+        <apellidos>Librería</apellidos>
+        <cif>44556677Y</cif>
+        <telefono>9566529943</telefono>
+    </datosEmisor>
+    <datosCliente>
+        <nombre>Biblioteca CIFP</nombre>
+        <cif>45895623T</cif>
+        <telefono>956513490</telefono>
+    </datosCliente>
+    <detallesFactura importe="85" moneda="euro">
+        <articulo codigoArticulo="T3C" tipo="Libro">
+            <descripcion>Trilogía de los 3 cuerpos</descripcion>
+            <cantidad>1</cantidad>
+            <oferta>SI</oferta>
+            <pvp moneda="euro">25</pvp>
+        </articulo>
+        <articulo codigoArticulo="CLR" tipo="Manual">
+            <descripcion>Código limpio</descripcion>
+            <cantidad>2</cantidad>
+            <oferta></oferta>
+            <pvp moneda="euro">30</pvp>
+        </articulo>
+    </detallesFactura>
+</factura>

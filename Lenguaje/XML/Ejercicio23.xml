@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE usuarios SYSTEM "usuarios.dtd">
+<usuarios>
+    <usuario clave="123456789">Ana</usuario>
+    <usuario clave="ab-c-d-fg">Ana</usuario>
+    <usuario clave="A1_B2..C3">Ana</usuario>
+</usuarios>

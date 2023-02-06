@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<factura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/factura.xsd">
+<factura numero="27" fecha="2022-12-08">
+    <datosEmisor>
+        <nombre>Pérez</nombre>
+        <apellidos>Librería</apellidos>
+        <cif>44556677Y</cif>
+        <telefono>9566529943</telefono>
+    </datosEmisor>
+    <datosCliente>
+        <nombre>Biblioteca CIFP</nombre>
+        <cif>45895623T</cif>
+        <telefono>956513490</telefono>
+    </datosCliente>
+    <detallesFactura importe="85$">
+        <articulo codigoArticulo="T3C" tipo="Libro">
+            <descripcion>Trilogía de los 3 cuerpos</descripcion>
+            <cantidad>1</cantidad>
+            <oferta>SI</oferta>
+            <pvp>25</pvp>
+        </articulo>
+        <articulo codigoArticulo="CLR" tipo="Manual">
+            <descripcion>Código limpio</descripcion>
+            <cantidad>2</cantidad>
+            <oferta>NO</oferta>
+            <pvp>30</pvp>
+        </articulo>
+    </detallesFactura>
+</factura>
+</factura>

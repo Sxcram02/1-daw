@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE alumno SYSTEM "alumno2.dtd">
+<alumno>
+    <nombre>María</nombre>
+    <apellido>Velarde García</apellido>
+</alumno>

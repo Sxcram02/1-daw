@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE animales SYSTEM "animales.dtd">
+<animales>
+    <animal imagen="ballena-azul.gif" tipo_de_imagen="gif">
+        <nombre>Ballena</nombre>
+    </animal>
+    <animal imagen="leon-dormido.png" tipo_de_imagen="png">
+        <nombre>Leon</nombre>
+    </animal>
+</animales>

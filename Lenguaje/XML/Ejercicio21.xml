@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE deportistas SYSTEM "deportista2.dtd">
+<deportistas>
+    <f1 codigo="VET" pais="ALE">Sebastian Vettel</f1>
+    <f1 codigo="ALO" >Fernando Alonso</f1>
+    <f1 codigo="SAI" pais="ESP">Carlos Sainz</f1>
+    <tenis>Rafael Nadal</tenis>
+</deportistas>

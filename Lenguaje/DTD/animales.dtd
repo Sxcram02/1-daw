@@ -1,0 +1,9 @@
+ <!ELEMENT animales (animal)*>
+    <!ELEMENT animal (nombre)>
+    <!ELEMENT nombre (#PCDATA)>
+        <!ATTLIST animal imagen CDATA #REQUIRED>
+        <!ATTLIST animal tipo_de_imagen NOTATION (gif|png|jpeg) #IMPLIED>
+    
+            <!NOTATION tipo_de_imagen PUBLIC 'gif'>
+            <!NOTATION tipo_de_imagen PUBLIC 'png'>
+            <!NOTATION tipo_de_imagen PUBLIC 'jpeg'>

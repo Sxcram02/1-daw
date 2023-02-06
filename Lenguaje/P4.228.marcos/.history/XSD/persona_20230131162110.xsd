@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="tipoNombre"></xs:element>
+                <xs:element name="nacimiento" type="xs:dateTime">
+                    <xs:complexType>
+                            <xs:attribute name="dia" type="dia" use="optional"></xs:attribute>
+                            <xs:attribute name="mes" type="mes" use="optional"></xs:attribute>
+                            <xs:attribute name="anyo" type="anyo" use="optional"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="direccion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="calle" type="tipoNombre"></xs:element>
+                            <xs:element name="poblacion" type="tipoNombre"></xs:element>
+                            <xs:element name="provincia" type="tipoNombre"></xs:element>
+                            <xs:element name="cpostal" type="cpostal"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="genero" type="genero"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="tipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(([A-Z]+[a-z]+)+([/s]*)+(\D*)+[0-9]*)+"></xs:pattern>
+            <xs:maxLength value="50"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="dia">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"></xs:minInclusive>
+            <xs:maxInclusive value="31"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="mes">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Enero"></xs:enumeration>
+            <xs:enumeration value="Febrero"></xs:enumeration>
+            <xs:enumeration value="Marzo"></xs:enumeration>
+            <xs:enumeration value="Abril"></xs:enumeration>
+            <xs:enumeration value="Mayo"></xs:enumeration>
+            <xs:enumeration value="Junio"></xs:enumeration>
+            <xs:enumeration value="Julio"></xs:enumeration>
+            <xs:enumeration value="Agosto"></xs:enumeration>
+            <xs:enumeration value="Septiembre"></xs:enumeration>
+            <xs:enumeration value="Octubre"></xs:enumeration>
+            <xs:enumeration value="Noviembre"></xs:enumeration>
+            <xs:enumeration value="Diciembre"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="anyo">
+        <xs:restriction base="xs:integer">
+            <xs:maxExclusive value="2012"></xs:maxExclusive>
+            <xs:minExclusive value="1899"></xs:minExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cpostal">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="5"></xs:totalDigits>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="genero">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(([A-Z]+[a-z]*)+[/s]*)+"></xs:pattern>
+            <xs:enumeration value="Varon"></xs:enumeration>
+            <xs:enumeration value="Hembra"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
