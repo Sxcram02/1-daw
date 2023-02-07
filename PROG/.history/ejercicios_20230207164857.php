@@ -54,5 +54,8 @@
     //EJERCICIO 4
     echo "<br />";
 
-
+    $array5 = array_merge($array3,$array4);
+    foreach($array5 as $clave => $valor){
+        echo "{$clave}={$valor}\n";
+    };
 ?>
