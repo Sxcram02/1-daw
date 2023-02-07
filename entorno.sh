@@ -6,7 +6,7 @@ rm -rf Master/
 mkdir Master && cd Master/
 git init .
 touch README.md && echo "Este es el principio de mi proyecto la rama **MASTER**" >> README.md
-touch actualizacion.sh && chmod 700 actualizacion.sh && echo "#!bin/bash" >> actualizacion.sh && echo "git add . -A && git commit -m "Nuevos cambios"" >> actualizacion.sh
+touch actualizacion.sh && chmod 700 actualizacion.sh && echo "#!bin/bash" >> actualizacion.sh && echo 'git add . -A && git commit -m "Nuevos cambios"' >> actualizacion.sh && echo "git status" >> actualizacion.sh
 git add . && git commit -m "Añadida rama principal"
 git branch LMSGI && git checkout LMSGI
 
