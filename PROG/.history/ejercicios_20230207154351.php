@@ -8,6 +8,5 @@
     $num = -1;
     for($j=10;$j=1;$j--){
         $array2[$j] = $num + 1;
-        echo "$array[$j]"." ";
     };
 ?>
