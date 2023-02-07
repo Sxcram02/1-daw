@@ -11,6 +11,7 @@
 		for($l=0;$l<=5;$l++){
 			if($array[$l]==$array2[$l]){
 			echo $array[$l], "el numero es capricua";
+			};
 		};
 	};
 ?>
