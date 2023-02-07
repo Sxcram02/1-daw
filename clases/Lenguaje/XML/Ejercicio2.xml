@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE libreria>
+<libreria>
+	<libro>
+		<titulo>El programadoir prágmatico</titulo>
+		<autor>David Thomas y Andrew Hunt</autor>
+		<anoDePublicacion>2022</anoDePublicacion>
+		<editorial>Anaya Multimedia</editorial>
+		<paginas>339</paginas>
+	</libro>
+	<libro>
+		<titulo>Código Limpio</titulo>
+		<autor>Robert C. Martin</autor>
+		<anoDePublicacion>2012</anoDePublicacion>
+		<editorial>Anaya Multimedia</editorial>
+		<paginas>463</paginas>
+	</libro>
+	<libro>
+		<titulo>Aprendiendo JavaScript</titulo>
+		<autor>Carlos Azaustre</autor>
+		<anoDePublicacion>2016</anoDePublicacion>
+		<editorial>Publicacion independiente</editorial>
+		<paginas>99</paginas>
+	</libro>
+</libreria>

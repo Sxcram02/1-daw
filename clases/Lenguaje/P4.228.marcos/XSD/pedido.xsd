@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pedidos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pedido">
+                    <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="cliente" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="nombre" type="xs:string"></xs:element>
+                                    <xs:element name="apellido" type="xs:string"></xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="codigo" type="xs:int"></xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="articulos" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="articulo" minOccurs="1" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="descripcion" type="xs:string"></xs:element>
+                                                <xs:element name="cantidad" type="xs:int"></xs:element>
+                                                <xs:element name="precio" type="xs:float"></xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="total" minOccurs="1" maxOccurs="1">
+                            <xs:complexType>
+                                <xs:attribute name="valor" type="xs:float"></xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                        <xs:attribute name="numero" type="xs:int" use="required"></xs:attribute>
+                        <xs:attribute name="dia" type="xs:date" use="optional"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

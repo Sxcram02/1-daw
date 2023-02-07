@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vehiculo>
+<!--EN ESTE DOCUMENTO HAY UNA MALA SINTAXIS SIN CERRAR ETIQUETAS O MAL CIERRE, FALTA EL TIPO DE DOCUMENTO (!doctype), MALA SEÑALIZACIÓN DE PARÁMETROS DE XML, ADEMÁS PARA QUE LA INFORMACIÓN SEA MAS SENCILLA DE PROCESAR SERÍA NECESARIO CREAR UN ATRIBUTO COMO TAMPOCO POSEE RAÍZ Y POR ÚLTIMO EL COMENTARIO ESTA MAL ESCRITO Y MAL POSICIONADO Y EL USO INDEBIDO DE LAS TILDES-->
+<!--Documento XML con errores de sintaxis.-->
+<vehiculo>
+    <vehiculos medio="terrestre">
+        <vehiculo>bicicleta</vehiculo>
+        <vehiculo>coche</vehiculo>
+        <vehiculo>tractor</vehiculo>
+    </vehiculos>
+    <vehiculos medio="acuático">
+        <vehiculo>canoa</vehiculo>
+    </vehiculos>
+    <vehiculos medio="aéreo">
+        <vehiculo>avion</vehiculo>
+        <vehiculo>helicoptero</vehiculo>
+    </vehiculos>
+</vehiculo>

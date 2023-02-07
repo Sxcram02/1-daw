@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE recetaDeCocina SYSTEM "../DTD/recetaCocina.dtd">
+<recetaDeCocina>
+    <nombre>Tortilla de patatas</nombre>
+    <ingrediente>Huevo</ingrediente>
+    <ingrediente>Patata</ingrediente>
+    <ingrediente>Cebolla</ingrediente>
+    <ingrediente>Aceite</ingrediente>
+    <ingrediente>Sal</ingrediente>
+</recetaDeCocina>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ciudades>
+<ciudades>
+    <ciudad>
+        <nombre>Ceuta</nombre>
+        <pais continente="africa">espania</pais>
+        <elevacion>10m</elevacion>
+    </ciudad>
+    <ciudad>
+        <nombre>Mykonos</nombre>
+        <pais continente="europa">Grecia</pais>
+        <elevacion></elevacion>
+    </ciudad>
+    <ciudad>
+        <nombre>Pekin</nombre>
+        <pais continente="asia">China</pais>
+        <elevacion>44m</elevacion>
+    </ciudad>
+    <ciudad>
+        <nombre>Ciudad de México</nombre>
+        <pais continente="america">mexico</pais>
+        <elevacion>2240m</elevacion>
+    </ciudad>
+</ciudades>

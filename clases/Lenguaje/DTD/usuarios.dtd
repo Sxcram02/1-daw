@@ -1,0 +1,3 @@
+<!ELEMENT usuarios (usuario)*>
+    <!ELEMENT usuario (#PCDATA)>
+        <!ATTLIST usuario clave NMTOKEN #REQUIRED>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE articulos SYSTEM "../DTD/articulos.dtd">
+<articulos>
+    <codigo>AF-32</codigo>
+    <id>3891</id>
+    <codigo>AF-50</codigo>
+    <codigo>AF-89</codigo>
+</articulos>

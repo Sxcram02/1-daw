@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="usuarios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuario">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="restricciones1"></xs:element>
+                            <xs:element name="departamento" type="xs:string"></xs:element>
+                            <xs:element name="puntuacion" type="restricciones3"></xs:element>
+                            <xs:element name="estado" type="restricciones2"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="restricciones1">
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="replace"></xs:whiteSpace>
+            <xs:pattern value="(([A-Z]+[a-z]*)+[\s]*)*"></xs:pattern>
+            <xs:maxLength value="20"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="restricciones2">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="conectado"></xs:enumeration>
+            <xs:enumeration value="ocupado"></xs:enumeration>
+            <xs:maxLength value="9"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="restricciones3">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"></xs:minInclusive>
+            <xs:maxInclusive value="10"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:annotation>
+        <xs:documentation xml:lang="es-es">
+            <usuario>
+                <nombre>Marcos</nombre>
+                <departamento></departamento>
+                <puntuacion>10</puntuacion>
+                <estado>conectado</estado>
+            </usuario>
+        </xs:documentation>
+    </xs:annotation>
+</xs:schema>

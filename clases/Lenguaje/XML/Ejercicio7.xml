@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE frutas>
+    <!--EN ESTE DOCUMENTO HAY UNA MALA SINTAXIS SIN CERRAR ETIQUETAS O MAL CIERRE, FALTA EL TIPO DE DOCUMENTO (!doctype) Y QUITAR EL ESPACIADO ENTRE ETIQUETAS, ADEMÁS PARA QUE LA INFORMACIÓN SEA MAS SENCILLA DE PROCESAR SERÍA NECESARIO CREAR UN ATRIBUTO-->
+    <frutas>
+        <fruta color="rojo">
+            <nombre>cereza</nombre>
+        </fruta>
+        <fruta color="naranja">
+            <nombre>naranja</nombre>
+        </fruta>
+    </frutas>

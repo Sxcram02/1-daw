@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<alumnos>
+    <alumno>
+        <nombre>Jose</nombre>
+        <apellidos>García Gonzaléz</apellidos>
+        <direccion>
+            <domicilio>Velarde 12</domicilio>
+            <codPostal>51001</codPostal>
+            <localidad>Ceuta</localidad>
+            <provincia>Ceuta</provincia>
+        </direccion>
+        <contactactar>
+            <tlfMovil>642367890</tlfMovil>
+            <tlfTrabajo>930654231</tlfTrabajo>
+            <tlfCasa></tlfCasa>
+            <email>ejemplo@ejemplo.com</email>
+        </contactactar>
+    </alumno>
+    <alumno>
+        <nombre>Aitana</nombre>
+        <apellidos>ramirrez Aguirre</apellidos>
+        <direccion>
+            <domicilio>Plaza sin nombre, 25</domicilio>
+            <codPostal>51002</codPostal>
+            <localidad>ceuta</localidad>
+            <provincia>Ceuta</provincia>
+        </direccion>
+        <contacto>
+            <tlfMovil>654876905</tlfMovil>
+            <tlfTrabajo>955467123</tlfTrabajo>
+            <tlfCasa>913456832</tlfCasa>
+            <email></email>
+        </contacto>
+    </alumno>
+</alumnos>

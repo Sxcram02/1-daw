@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<usuarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/ejercicio29y30y31.xsd">
+    <usuario>
+        <nombre>Marcos Dominguez</nombre>
+        <departamento>Informática</departamento>
+        <puntuacion>10</puntuacion>
+        <estado>conectado</estado>
+    </usuario>
+</usuarios>

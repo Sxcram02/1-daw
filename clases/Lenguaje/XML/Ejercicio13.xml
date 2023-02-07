@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html SYSTEM "../DTD/html.dtd">
+<html>
+    <head>
+        <title>Título del HTML</title>
+    </head>
+    <body>
+        <br/>
+        <p>Esto es un párrafo</p>
+    </body>
+</html>

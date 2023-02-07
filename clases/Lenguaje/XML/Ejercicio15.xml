@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE compra SYSTEM "../DTD/compra.dtd">
+<compra>
+    <producto>Harina</producto>
+    <producto>Leche</producto>
+    <producto>Huevos</producto>
+</compra>

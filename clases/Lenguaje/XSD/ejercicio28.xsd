@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="alumnos" type="datosAlumnos" />
+    <xs:complexType name="datosAlumnos">
+            <xs:sequence>
+                <xs:element name="alumno" type="info" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="info">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+            <xs:element name="apellidos" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+            <xs:element name="direccion" type="direccion" minOccurs="1" maxOccurs="unbounded" ></xs:element>
+            <xs:element name="contactar" type="contactar" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="direccion">
+        <xs:sequence>
+            <xs:element name="domicilio" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            <xs:element name="codPostal" type="xs:int" minOccurs="1" maxOccurs="1"></xs:element>
+            <xs:element name="provincia" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+            <xs:element name="localidad" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="contactar">
+        <xs:sequence>
+            <xs:element name="tlfMovil" type="xs:int" minOccurs="1" maxOccurs="1"></xs:element>  
+            <xs:element name="tlfTrabajo" type="xs:int" minOccurs="0" maxOccurs="1"></xs:element>
+            <xs:element name="tlfCasa" type="xs:int" minOccurs="0" maxOccurs="1"></xs:element>
+            <xs:element name="email" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
