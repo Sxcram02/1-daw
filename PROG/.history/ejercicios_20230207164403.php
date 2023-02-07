@@ -41,7 +41,6 @@
 
     echo "<br />";
 
-    $num = 0;
     for($c=0;$c<20;$c++){
         if($num%2==1){
             $impares = $num;

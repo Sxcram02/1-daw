@@ -34,6 +34,8 @@
         if($num%2==0){
             $pares = $num;
             $array3[$i] = $pares;
+        }else{
+            return;
         };
         echo $array3[$i]." \n";
         $num = $num + 1;
@@ -41,12 +43,13 @@
 
     echo "<br />";
 
-    $num = 0;
     for($c=0;$c<20;$c++){
         if($num%2==1){
             $impares = $num;
             $array4[$c] = $impares;
-        }
+        }else{
+            return;
+        };
         echo $array4[$c]." \n";
         $num = $num + 1;
     };

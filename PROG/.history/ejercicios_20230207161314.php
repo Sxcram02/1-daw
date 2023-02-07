@@ -27,27 +27,16 @@
 
     // EJERCICIO 3
     echo "<br />";
+    
     $num = 0;
-    $cont = 0;
-
-    for($i=0;$i<20;$i++){
+    
+    for($i=0;$i<10;$i++){
         if($num%2==0){
-            $pares = $num;
-            $array3[$i] = $pares;
+
+        }elseif($num%2==1){
+
+        }else{
+            error_reporting();
         };
-        echo $array3[$i]." \n";
-        $num = $num + 1;
-    };
-
-    echo "<br />";
-
-    $num = 0;
-    for($c=0;$c<20;$c++){
-        if($num%2==1){
-            $impares = $num;
-            $array4[$c] = $impares;
-        }
-        echo $array4[$c]." \n";
-        $num = $num + 1;
     };
 ?>

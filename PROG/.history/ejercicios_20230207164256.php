@@ -34,20 +34,21 @@
         if($num%2==0){
             $pares = $num;
             $array3[$i] = $pares;
+        }else{
+            return;
         };
         echo $array3[$i]." \n";
         $num = $num + 1;
     };
 
-    echo "<br />";
-
-    $num = 0;
-    for($c=0;$c<20;$c++){
+    for($i=0;$i<20;$i++){
         if($num%2==1){
             $impares = $num;
-            $array4[$c] = $impares;
-        }
-        echo $array4[$c]." \n";
+            $array4[$i] = $impares;
+        }else{
+            return;
+        };
+        echo $array4[$i]." \n";
         $num = $num + 1;
     };
 ?>
