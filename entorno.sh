@@ -6,7 +6,7 @@ rm -rf Master/
 mkdir Master && cd Master/
 git init .
 touch README.md && echo "Este es el principio de mi proyecto la rama **MASTER**" >> README.md
-
+touch actualizacion.sh && chmod 700 actualizacion.sh && echo "#!bin/bash" >> actualizacion.sh && echo "git add . -A && git commit -m "Nuevos cambios"" >> actualizacion.sh
 git add . && git commit -m "Añadida rama principal"
 git branch LMSGI && git checkout LMSGI
 
@@ -19,12 +19,8 @@ cd materiales/ && touch README.md && echo "materiales de la asignatura" >> READM
 cd ../ejercicios/ && touch README.md && echo "ejercicios de la asignatura" >> README.md
 # RETORNO A MASTER
 cd ../../
-
-
-
-
-
-
+#################################################################################################################################################################################################################################
+#################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama de lenguaje"
 
 git checkout master && git branch ERD && git checkout ERD
@@ -36,12 +32,7 @@ cd materiales/ && touch README.md && echo "materiales de la asignatura" >> READM
 cd ../ejercicios/ && touch README.md && echo "ejercicios de la signatura" >> README.md
 # RETORNO A MASTER/
 cd ../../
-
-
-
-
-
-
+##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama ERD"
 
 git checkout master && git branch PROG && git checkout PROG
@@ -55,15 +46,7 @@ cd materiales/ && touch README.md && echo "materiales de la asignatura" >> READM
 cd ../ejercicios/ && touch README.md && echo "ejercicios de la signatura" >> README.md
 # RETORNO A MASTER/
 cd ../../
-
-
-
-
-
-
-
-
-
+##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama PROG"
 
 git checkout master && git branch BBDD && git checkout BBDD
@@ -76,14 +59,7 @@ cd materiales/ &&  touch README.md && echo "materiales de la asignatura" >> READ
 cd ../ejercicios/ &&  touch README.md && echo "ejercicios de la asignatura" >> README.md
 # RETORNO A MASTER/
 cd ../../
-
-
-
-
-
-
-
-
+##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama BBDD"
 
 git checkout master && git branch SIS && git checkout SIS
@@ -96,14 +72,7 @@ cd materiales/ && touch README.md && echo "materiales de la asignatura" >> READM
 cd ../ejercicios/ && touch README.md && echo "ejercicios de la asignatura" >> README.md
 # RETORNO A MASTER/
 cd ../../
-
-
-
-
-
-
-
-
+##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama SIS"
 
 git checkout master && git branch FOL && git checkout FOL
@@ -117,7 +86,8 @@ cd materiales/ && echo "materiales de la asignatura" >> README.md
 cd ../ejercicios/ && echo "ejercicios de la signatura" >> README.md
 # RETORNO A MASTER/
 cd ../../
-
+#################################################################################################################################################################################################################################
+#################################################################################################################################################################################################################################
 
 git add . && git commit -m "Añadida rama FOL"
 
@@ -137,5 +107,4 @@ git add . && git commit -m "Añadida rama FOL"
 # Y QUE POSEEMOS ESAS RAMAS
 
 git checkout master
-
 git branch -av
