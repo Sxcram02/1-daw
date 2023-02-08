@@ -79,4 +79,5 @@
     echo "<br />";
     echo max($array5)." maximo ";
     echo min($array5)." minimo ";
+echo "Hola";
 ?>
