@@ -29,7 +29,7 @@
     echo "<br />";
     $num = 0;
     $cont = 0;
-
+    $array3 = array();
     for($i=0;$i<20;$i++){
         if($num%2==0){
             $pares = $num;
@@ -42,6 +42,7 @@
     echo "<br />";
 
     $num = 0;
+    $array4 = array();
     for($c=0;$c<20;$c++){
         if($num%2==1){
             $impares = $num;
@@ -53,4 +54,24 @@
 
     //EJERCICIO 4
     echo "<br />";
+
+    $array5 = array_merge($array3,$array4);
+    $contador = count($array5);
+    sort($array5);
+    for($i=0;$i<40;$i++){
+        echo $array5[$i]." ";
+    };  
+    echo $contador. "valores";
+
+    // EJERCICIO 5
+    echo "<br />";
+    $array6 = shuffle($array5);
+    for($i=0;$i<40;$i++){
+        echo $array5[$i]." ";
+    };  
+
+    // EJERCICIO 6
+echo "<br />";
+    $array7 = array_sum($array5);
+    $media = $suma;
 ?>
