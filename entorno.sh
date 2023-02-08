@@ -154,4 +154,4 @@ echo "----------------------------"
 echo " "
 echo " "
 echo " "
-git log --oneline
+git log --all --oneline --graph --pretty --decorate --stat
