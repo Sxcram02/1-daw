@@ -1,4 +1,4 @@
-#!/bin/bas
+#!/bin/bash
 
 # PRIMERA PARTE
 rm -rf Master/
