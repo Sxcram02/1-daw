@@ -8,6 +8,11 @@ git init .
 touch README.md && echo "Este es el principio de mi proyecto la rama **MASTER**" >> README.md
 touch actualizacion.sh && chmod 700 actualizacion.sh && echo "#!bin/bash" >> actualizacion.sh && echo 'git add . -A && git commit -m "Nuevos cambios"' >> actualizacion.sh && echo "git status" >> actualizacion.sh
 git add . && git commit -m "Añadida rama principal"
+echo "----------------------------"
+echo "Añadida rama master"
+echo "----------------------------"
+echo " "
+echo " "
 git branch LMSGI && git checkout LMSGI
 
 
@@ -22,7 +27,11 @@ cd ../../
 ##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
 git add . && git commit -m "Añadida rama de lenguaje"
-
+echo "----------------------------"
+echo "Añadido Lenguaje"
+echo "----------------------------"
+echo " "
+echo " "
 git checkout master && git branch ERD && git checkout ERD
 
 # vuelvo a la rama master para desde ella crear otra rama de entorno
@@ -34,7 +43,11 @@ cd ../ejercicios/ && touch README.md && echo "ejercicios de la signatura" >> REA
 cd ../../
 ##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama ERD"
-
+echo "----------------------------"
+echo "Añadido Entorno"
+echo "----------------------------"
+echo " "
+echo " "
 git checkout master && git branch PROG && git checkout PROG
 
 # se retorna a la rama master y se crea la rama de programacion
@@ -48,7 +61,11 @@ cd ../ejercicios/ && touch README.md && echo "ejercicios de la signatura" >> REA
 cd ../../
 ##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama PROG"
-
+echo "----------------------------"
+echo "Añadido Programacion"
+echo "----------------------------"
+echo " "
+echo " "
 git checkout master && git branch BBDD && git checkout BBDD
 
 # De vueta en la rama master creamos la rama de base de datos
@@ -61,7 +78,11 @@ cd ../ejercicios/ &&  touch README.md && echo "ejercicios de la asignatura" >> R
 cd ../../
 ##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama BBDD"
-
+echo "----------------------------"
+echo "Añadido Base de datos"
+echo "----------------------------"
+echo " "
+echo " "
 git checkout master && git branch SIS && git checkout SIS
 
 # A partir de master generamos la rama de sistema nos introducimos en ella
@@ -74,7 +95,11 @@ cd ../ejercicios/ && touch README.md && echo "ejercicios de la asignatura" >> RE
 cd ../../
 ##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 git add . && git commit -m "Añadida rama SIS"
-
+echo "----------------------------"
+echo "Añadido Sistemas"
+echo "----------------------------"
+echo " "
+echo " "
 git checkout master && git branch FOL && git checkout FOL
 
 # Por último creamos la rama de fol desde master
@@ -89,7 +114,10 @@ cd ../../
 ##################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
 git add . && git commit -m "Añadida rama FOL"
-
+echo "----------------------------"
+echo "Añadido Formacion y orientacion Laboral"
+echo "----------------------------"
+echo " "
 ###################################################################################################################################################
 #                                                        llevamos la cuenta de la rama master                                                     #
 # ------------------------------------------------------------------------------------------------------------------------------------------------#
@@ -107,3 +135,23 @@ git add . && git commit -m "Añadida rama FOL"
 
 git checkout master
 git branch -av
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+
+git merge -m "Fusion de Lenguaje" LMSGI && echo "----------Fusion 1----------"
+git merge -m "Fusion de Entorno" ERD && echo "----------Fusion 2----------"
+echo " "
+git merge -m "Fusion de Proramacion" PROG && echo "----------Fusion 5----------"
+git merge -m "Fusion de Base de datos" BBDD && echo "----------Fusion 4----------"
+echo " "
+git merge -m "Fusion de Sistemas" SIS && echo "----------Fusion 5----------"
+git merge -m "Fusion de Formacion y orientacion Laboral" FOL && echo "----------Fusion 6----------"
+echo " "
+echo "----------------------------"
+echo "Todos los repositorios creador y fusionados con exito" >> README.md
+echo "Repositorios Fusionados con éxito"
+echo "----------------------------"
+echo " "
+echo " "
+echo " "
+git log --oneline
