@@ -58,7 +58,7 @@
     $array5 = array_merge($array3,$array4);
     $contador = count($array5);
     sort($array5);
-    for($i=0;$i<40;$i++){
+    for($i=0;$i<=$contador;$i++){
         echo $array5[$i]." ";
     };  
     echo $contador. "valores";
@@ -66,12 +66,16 @@
     // EJERCICIO 5
     echo "<br />";
     $array6 = shuffle($array5);
-    for($i=0;$i<40;$i++){
+    for($i=0;$i<=$contador;$i++){
         echo $array5[$i]." ";
     };  
 
     // EJERCICIO 6
-echo "<br />";
+    echo "<br />";
     $array7 = array_sum($array5);
-    $media = $suma;
+    $media = $suma/$contador;
+
+    //EJERCICIO 7
+    echo "<br />";
+    
 ?>
