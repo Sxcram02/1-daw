@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<faq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="faq.xsd">
+    <info>
+        <titulo>WINDOWS8.1? SOLO SI ME OBLIGAN!?</titulo>
+        <autor>Fernando Lorenzo García</autor>
+        <email>fer@cifpceuta.es</email>
+        <version>1.5</version>
+        <fecha>2023-09-02</fecha>
+    </info>
+    <part>
+        <q>
+            <qtext>¿Por qué tengo que instalar W8.1?</qtext>
+            <a>A mi también me parece una buena pregunta</a>
+        </q>
+        <q>
+            <qtext>¿Y que me vale?</qtext>
+            <a>Otra ingeniosa pregunta.</a>
+        </q>
+    </part>
+</faq>

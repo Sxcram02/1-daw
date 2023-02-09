@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE helipuerto SYSTEM "vuelos.dtd">
+<helipuerto>
+    <nombre>JCU</nombre>
+    <vuelos>
+        <vuelo codigo="V123" estado="E">
+            <diario>SI</diario>
+            <origen>Ceuta</origen>
+            <destino>Málaga</destino>
+            <salida>9:30</salida>
+            <llegada>10:00</llegada>
+        </vuelo>
+        <vuelo codigo="V124" estado="R">
+            <diario></diario>
+            <origen>Algeciras</origen>
+            <destino>Ceuta</destino>
+            <salida>10:15</salida>
+            <llegada>10:20</llegada>
+        </vuelo>
+        <vuelo codigo="V125" estado="C">
+            <diario>SI</diario>
+            <origen>Málaga</origen>
+            <destino>Ceuta</destino>
+            <salida>10:30</salida>
+            <llegada>10:50</llegada>
+        </vuelo>
+    </vuelos>
+    <fecha>9-02-2023</fecha>
+</helipuerto>

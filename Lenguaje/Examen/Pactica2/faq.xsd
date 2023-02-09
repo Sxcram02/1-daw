@@ -1,0 +1,38 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="faq">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="info" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo" type="palabra"></xs:element>
+                            <xs:element name="autor" type="palabra"></xs:element>
+                            <xs:element name="email" type="palabra"></xs:element>
+                            <xs:element name="version" type="xs:float"></xs:element>
+                            <xs:element name="fecha" type="xs:date"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="part" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="q" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="qtext" type="palabra" minOccurs="1"></xs:element>
+                                        <xs:element name="a" type="palabra" minOccurs="1"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="palabra">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="((([A-Z]+[a-z])*)+(\D*)+([\s]*)+([0-9]*))*"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
