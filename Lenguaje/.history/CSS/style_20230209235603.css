@@ -1,0 +1,15 @@
+pedido {
+    display: table-cell;
+    width: 300px;    
+    height: 220px;
+}
+
+cliente {
+    display: block;
+    border: black 1px solid;
+}
+
+articulo {
+    display: block;
+    border: black 1px solid;
+}

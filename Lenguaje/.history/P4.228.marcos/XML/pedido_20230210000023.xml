@@ -6,7 +6,7 @@
         <nombre>Felipe</nombre>
         <apellido>Garcia</apellido>
     </cliente>
-    <articulos>
+    <articulos class="estilo">
         <articulo>
             <descripcion class="estilo">Yoda Mimobot USB Flash Drive 8GB</descripcion>
             <cantidad class="estilo">5</cantidad>

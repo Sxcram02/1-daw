@@ -1,0 +1,12 @@
+pedido {
+    display: table-cell;
+    width: 300px;    
+    height: 220px;
+}
+
+[class=estilo]{
+    display: block;
+    border: black 3px solid;
+    text-align: center;
+    margin-bottom: 1%;
+}

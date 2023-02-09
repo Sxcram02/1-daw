@@ -8,14 +8,14 @@
     </cliente>
     <articulos>
         <articulo>
-            <descripcion class="estilo">Yoda Mimobot USB Flash Drive 8GB</descripcion>
-            <cantidad class="estilo">5</cantidad>
-            <precio class="estilo">38.99</precio>
+            <descripcion>Yoda Mimobot USB Flash Drive 8GB</descripcion>
+            <cantidad>5</cantidad>
+            <precio>38.99</precio>
         </articulo>
         <articulo>
-            <descripcion class="estilo">Darth Vader Half Helmet Case for iPhone</descripcion>
-            <cantidad class="estilo">2</cantidad>
-            <precio class="estilo">29.95</precio>
+            <descripcion>Darth Vader Half Helmet Case for iPhone</descripcion>
+            <cantidad>2</cantidad>
+            <precio>29.95</precio>
         </articulo>
     </articulos>
     <total valor="254.85"></total>

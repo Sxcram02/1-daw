@@ -1,0 +1,8 @@
+pedido {
+    display: inline-block;    
+}
+
+cliente {
+    display: table;
+    border: black 1px solid;
+}

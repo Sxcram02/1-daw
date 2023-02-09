@@ -1,0 +1,13 @@
+pedido {
+    display: table-cell;    
+}
+
+cliente {
+    display: block;
+    border: black 1px solid;
+}
+
+articulos {
+    display: table;
+    border: black 1px solid;
+}

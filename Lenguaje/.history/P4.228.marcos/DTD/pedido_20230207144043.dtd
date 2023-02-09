@@ -8,10 +8,7 @@
     <!ELEMENT articulos (articulo+)>
         <!ELEMENT articulo (descripcion?,cantidad*,precio+)>
             <!ELEMENT descripcion (#PCDATA)>
-                <!ATTLIST descripcion class CDATA #REQUIRED>
             <!ELEMENT cantidad (#PCDATA)>
-                <!ATTLIST cantidad class CDATA #REQUIRED>
             <!ELEMENT precio ANY>
-                <!ATTLIST precio class CDATA #REQUIRED>
     <!ELEMENT total EMPTY>
     <!ATTLIST total valor NMTOKEN #REQUIRED>
