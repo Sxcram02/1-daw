@@ -6,9 +6,19 @@
 pedido {
     display: table-cell;
     padding: 0;
-    margin: 30%;
-    width: 300px;    
+    margin: 0 30% 30% 30%;
+    width: 350px;    
     height: 220px;
+}
+
+cliente { 
+	padding: 0 107px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	opacity: 65%;
+	background: linear-gradient(360deg, transparent, darkgreen, pink);
 }
 
 [class=estilo]{
@@ -16,4 +26,8 @@ pedido {
     border: black 3px solid;
     text-align: center;
     margin-bottom: 1%;
+    color: white;
+    background: gray;
 }
+
+
