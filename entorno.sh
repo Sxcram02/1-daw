@@ -24,7 +24,7 @@ then
 	git init .
 	touch README.md && echo "Este es el principio de mi proyecto la rama **MASTER**" >> README.md
 	touch actualizacion.sh && chmod 700 actualizacion.sh && echo "#!bin/bash" >> actualizacion.sh && echo 'git add . -A && git commit -m "Nuevos cambios"' >> actualizacion.sh && echo "git status" >> actualizacion.sh
-	mv ./actualizacion.sh ./actualizacion && sudo cp ./actualizacion /usr/local/bin && sudo sed -i "122d122d122d122d122d122d122d122d122d122d122d122d" ~/.bashrc && sudo echo "alias act='/usr/local/bin/actualizacion'" >> ~/.bashrc && source ~/.bashrc
+	mv ./actualizacion.sh ./actualizacion && sudo cp ./actualizacion /usr/local/bin && sudo sed -i "122d" ~/.bashrc && sudo echo "alias act='/usr/local/bin/actualizacion'" >> ~/.bashrc && source ~/.bashrc
 	git add . && git commit -m "Añadida rama principal"
 	echo "----------------------------"
 	echo "Añadida rama master"
