@@ -1,0 +1,15 @@
+<!ELEMENT helipuerto (nombre,vuelos+,fecha)*>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT vuelos (vuelo+)>
+        <!ELEMENT vuelo (diario?,origen,destino,salida,llegada)>
+            <!ATTLIST vuelo codigo ID #REQUIRED>
+            <!ATTLIST vuelo estado NOTATION (E|R|C) "E">
+                <!NOTATION E SYSTEM 'en hora'>
+                <!NOTATION R SYSTEM 'retraso'>
+                <!NOTATION C SYSTEM 'cancelado'>
+            <!ELEMENT diario EMPTY>
+            <!ELEMENT origen (#PCDATA)>
+            <!ELEMENT destino (#PCDATA)>
+            <!ELEMENT salida (#PCDATA)>
+            <!ELEMENT llegada (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
