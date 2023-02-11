@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml-stylesheet href="./../CSS/style.css" type="text/css"?>
+<!DOCTYPE pedido SYSTEM "./../DTD/pedido.dtd">
+<pedido numero="26" dia="2023-12-01">
+    <cliente codigo="20">
+        <nombre>Felipe</nombre>
+        <apellido>Garcia</apellido>
+    </cliente>
+    <articulos>
+        <articulo>
+            <descripcion class="estilo">Yoda Mimobot USB Flash Drive 8GB</descripcion>
+            <cantidad class="estilo">5</cantidad>
+            <precio class="estilo">38.99</precio>
+        </articulo>
+        <articulo>
+            <descripcion class="estilo">Darth Vader Half Helmet Case for iPhone</descripcion>
+            <cantidad class="estilo">2</cantidad>
+            <precio class="estilo">29.95</precio>
+        </articulo>
+    </articulos>
+    <total valor="254.85"></total>
+</pedido>
