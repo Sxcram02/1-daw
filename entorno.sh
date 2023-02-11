@@ -36,7 +36,7 @@ then
 
 
 
-hola
+
 
 # creo la rama de lenguaje y hago su primer commit a la vez que creo
 # las carpetas de materiales y ejercicios para tambien hacer commit de ella
