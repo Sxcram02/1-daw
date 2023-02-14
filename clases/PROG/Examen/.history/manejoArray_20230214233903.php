@@ -19,11 +19,10 @@ for($i=0;$i<5;$i++){
     for($c=0;$c<5;$c++){
         echo $arrayMulti[$c][$cont]." ";
         $cont = $cont - 1;
+        echo "<br />";
     };
     echo "<br />";
 };
-
-echo "<br />";
 
 echo "<br/>";
 

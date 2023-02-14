@@ -17,13 +17,11 @@ $cont = 4;
 for($i=0;$i<5;$i++){
     echo $arrayMulti[$i][$i]." ";
     for($c=0;$c<5;$c++){
-        echo $arrayMulti[$c][$cont]." ";
+        echo $arrayMulti[$c][$cont]." "."<br />";
         $cont = $cont - 1;
     };
     echo "<br />";
 };
-
-echo "<br />";
 
 echo "<br/>";
 

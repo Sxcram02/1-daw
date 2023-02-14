@@ -16,14 +16,13 @@ echo "Ejercicio 2:"."<br />";
 $cont = 4;
 for($i=0;$i<5;$i++){
     echo $arrayMulti[$i][$i]." ";
+    echo "<br />";
     for($c=0;$c<5;$c++){
         echo $arrayMulti[$c][$cont]." ";
         $cont = $cont - 1;
     };
     echo "<br />";
 };
-
-echo "<br />";
 
 echo "<br/>";
 
